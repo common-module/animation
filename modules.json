@@ -1,0 +1,6 @@
+{
+    "animation:animation": "./src/Animation.js",
+    "util:inherit": "http://common-module.github.io/util/src/inherit.js",
+    "event:Event": "http://common-module.github.io/event/src/Event.js",
+    "event:EventTarget": "http://common-module.github.io/event/src/EventTarget.js"
+}

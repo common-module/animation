@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Animation</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+        <script type="text/javascript" src="http://common-module.github.io/modulejs/src/modulejs.js"></script>
+        <script type="text/javascript" src="http://common-module.github.io/modulejs/src/modulejs-register.js"></script>
+        <script type="text/javascript" src="http://common-module.github.io/modulejs/src/modulejs-wrapped-importer.js"></script>
+        <script type="text/javascript" src="http://shallker.github.io/learn-jasmine/03-load-jasmine-2.0/load-jasmine-from-github.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            modulejs.importJSON('../modules.json', function () {
+                describe('Animation', function () {
+                    var Animation = require('Animation');
+
+                    it('原型应该存在 start 方法', function () {
+                        expect(typeof Animation.prototype.start).toEqual('function');
+                    });
+
+                    it('原型应该存在 stop 方法', function () {
+                        expect(typeof Animation.prototype.stop).toEqual('function');
+                    });
+
+                    it('原型应该存在 pause 方法', function () {
+                        expect(typeof Animation.prototype.pause).toEqual('function');
+                    });
+
+                    it('原型应该存在 resume 方法', function () {
+                        expect(typeof Animation.prototype.resume).toEqual('function');
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

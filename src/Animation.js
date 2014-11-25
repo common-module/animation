@@ -1,4 +1,4 @@
-define('Animation', function (require, exports, module) {
+define('animation:Animation', function (require, exports, module) {
     var inherit = require('util:inherit');
     var Event = require('event:Event');
     var EventTarget = require('event:EventTarget');
